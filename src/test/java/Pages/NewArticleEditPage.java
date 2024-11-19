@@ -14,7 +14,7 @@ public class NewArticleEditPage {
 	@FindBy(xpath = "//input[@name='description']")
 	WebElement descriptionTextBox;
 
-	@FindBy(xpath = "//textarea[@name='bodyy']")
+	@FindBy(xpath = "//textarea[@name='body']")
 	WebElement bodyTextBox; //tags
 	
 	@FindBy(name = "tags")
