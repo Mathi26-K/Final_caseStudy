@@ -16,7 +16,8 @@ Feature: Conduit CRUD Functions
   Scenario: Create new Article
     Given User should be on New Article Page
     When User enters Article details
-   # | title | Desc | content |tag|
+    | title | Desc | content |tag|
+    | SELENIUM1  | Git | TestNG | Test |
     Then Article must be created
 
 
@@ -28,6 +29,8 @@ Scenario: View Article
  Scenario: Update an Article
  		Given Article detail page must be displayed1
  		When User update article detail
+    | title | Desc | content |
+    | Git  | Selenium | Test | 
  		Then Article detail must be displayed
  		
  	Scenario: Delete an Article

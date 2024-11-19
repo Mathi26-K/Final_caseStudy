@@ -40,11 +40,11 @@ public class NewArticleEditPage {
 		System.out.println("available : "+ newAtricleButton.isDisplayed());
 		newAtricleButton.click();
 	}
-	public void CreatingArticle() {
-		TitleTextBox.sendKeys("SELENIUM e63 SESSION");
-		descriptionTextBox.sendKeys("The article is about selenium, git, cucumber, testNG");
-		bodyTextBox.sendKeys("Selenium is open-source framework designed for automating web applications across different browsers");
-		tagsTextBox.sendKeys("Testing");
+	public void CreatingArticle(String title, String desc, String content, String tag) {
+		TitleTextBox.sendKeys(title);
+		descriptionTextBox.sendKeys(desc);
+		bodyTextBox.sendKeys(content);
+		tagsTextBox.sendKeys(tag);
 	}
 	public void PublishArticle() {
 		PublishBtn.click();

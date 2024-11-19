@@ -46,13 +46,13 @@ public class EditArticlePage {
 		System.out.println("available : "+ editArticleBtn.isDisplayed());
 		editArticleBtn.click();
 	}
-	public void EditArticle() {
+	public void EditArticle(String title, String desc, String content) {
 		TitleTextBox.clear();
-		TitleTextBox.sendKeys("SELENIUM F9 SESSION");
+		TitleTextBox.sendKeys(title);
 		descriptionTextBox.clear();
-		descriptionTextBox.sendKeys("The article is about selenium, git, cucumber, TestNG");
+		descriptionTextBox.sendKeys(desc);
 		bodyTextBox.clear();
-		bodyTextBox.sendKeys("Selenium is open-source framework designed for automating web applications across different browsers..");
+		bodyTextBox.sendKeys(content);
 		//tagsTextBox.sendKeys("Testing");
 	}
 	public void UpdateArticle() {
