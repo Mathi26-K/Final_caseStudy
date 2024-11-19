@@ -40,7 +40,7 @@ public class ConduitStepDef {
 
 	@When("User provide {string} and {string}")
 	public void user_provide_and(String username, String password) {
-		loginPage.validLogin("kmathi026@gmail.com", "Selenium@2025");
+		loginPage.validLogin(username, password);
 	}
 
 	@Then("User should be on Home page")

@@ -9,7 +9,7 @@ Feature: Conduit CRUD Functions
 	
 	Scenario: Login into app
 	Given User is on login page
-	When User provide "username" and "password"
+	When User provide "kmathi026@gmail.com" and "Selenium@2025"
 	Then User should be on Home page
 	
 	

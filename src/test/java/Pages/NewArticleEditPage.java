@@ -1,10 +1,7 @@
 package Pages;
 
-import java.util.List;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -17,7 +14,7 @@ public class NewArticleEditPage {
 	@FindBy(xpath = "//input[@name='description']")
 	WebElement descriptionTextBox;
 
-	@FindBy(xpath = "//textarea[@name='body']")
+	@FindBy(xpath = "//textarea[@name='bodyy']")
 	WebElement bodyTextBox; //tags
 	
 	@FindBy(name = "tags")
